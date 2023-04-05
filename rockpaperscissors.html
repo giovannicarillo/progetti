@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;1,600&family=Poppins:wght@500;600&display=swap"
+    rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sasso carta forbici</title>
+</head>
+<body>
+    <p class="titolo">Sasso &nbsp Carta &nbsp Forbici</p>
+    <div class="bottoni"><button onclick="
+
+    playGame('sasso')
+
+    "><img src="pngs/sasso.png"></button>
+    <button onclick="
+
+    
+        playGame('carta');
+   
+    
+    ">
+      <img src="pngs/carta.png">
+    </button>
+    <button onclick="
+
+playGame('forbici');
+
+    
+    "><img src="pngs/forbici.png"></button></div>
+   </div>
+<p class="js-result risultato"></p>
+<p class="js-moves mosse"></p>
+<p class="js-score"></p>
+ <div class="puls"><button class="pulspar" onclick="
+    score.vittorie = 0;
+    score.sconfitte = 0;
+    score.pareggi = 0
+    localStorage.removeItem('score')
+    updateScoreElement()"
+    >Reset Punteggio</button>
+
+<div class="divider2"><button class="pulspar2"
+  onclick="
+    
+    autoPlay();
+    
+    ">Auto Play</button></div>
+
+
+    <script src="rockpaperscissors.js">
+  </script>
+</body>
+</html>
